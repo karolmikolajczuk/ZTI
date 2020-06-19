@@ -1,0 +1,262 @@
+:root {
+    --border-user-bar: 2px solid #e4e4e4;
+    --color-primary: #bf4c00;
+    --color-announcements: #1d79a0;
+    --background-body: #303030;
+    --color-body: #353c41;
+    --background-header: #303030;
+    --background-article: #fff;
+    --color-article-button: #000;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--background-body);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--color-body);
+    height: 100%;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+/* ========== Header ========== */
+
+header {
+    background-color: var(--background-header);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    justify-content: space-between;
+}
+
+header #logo img {
+    width: 300px;
+}
+
+
+/* ========== User Bar ========== */
+
+.user_bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.user_bar ul li {
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    padding: .5rem 0;
+    font-weight: bold;
+}
+
+.user_bar ul li i {
+    font-size: 2rem;
+}
+
+.user_bar #user_bar_user {
+    display: flex;
+    align-items: center;
+    border-left: var(--border-user-bar);
+}
+
+.user_bar #user_bar_user i {
+    font-size: 1.25rem;
+}
+
+.user_bar #user_bar--create {
+    padding-right: 1rem;
+    border-right: var(--border-user-bar);
+}
+
+.user_bar #user_bar--create i {
+    font-size: 1.25rem;
+}
+
+.user_bar #user_bar--create i.fa-plus {
+    padding-right: 0.25rem;
+}
+
+#user_bar_user .user_bar_user--avatar {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px;
+}
+
+.user_bar #user_bar_user img {
+    width: 26px;
+    height: 26px;
+    border-radius: 20%;
+    background-color: white;
+    padding: 1px;
+}
+
+
+/* ========== Post - Profile ========== */
+
+article {
+    background-color: var(--background-article);
+    display: flex;
+    box-shadow: 0px 2px 4px -1px rgba(45, 55, 72, 0.1);
+    margin-top: 2rem;
+}
+
+article aside {
+    padding: 1rem;
+    flex: 0 0 20rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article aside .post_nick {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+article aside .post_aside--avatar img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+}
+
+article aside .post_grup {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+article aside .post_grup_3 {
+    color: gray;
+}
+
+article aside .post_grup_4 {
+    color: red;
+}
+
+article aside .post_grup_2 {
+    color: green;
+}
+
+
+/* ========== Post - Content ========== */
+
+.post_content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.post_content .post_content--post {
+    margin-bottom: auto;
+}
+
+.post_content .post_content_buttons {
+    display: flex;
+}
+
+.post_content .post_content_buttons button {
+    background-color: transparent;
+    font-family: inherit;
+    border: 0;
+    box-shadow: none;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    color: var(--color-article-button);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post_content .post_content_buttons button.post_content_buttons_quote {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

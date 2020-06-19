@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="overflow-x:auto;" id="content">
+        <nav class="menus">
+            <!-- Menu sortowania -->
+            <label>Sortowanie</label>
+            <select id="kolumny_sort">
+          <option value="lp_sort">Lp</option>
+          <option value="country_sort">Państwo</option>
+          <option value="town_sort">Miasto</option>
+          <option value="ppl_sort">Ludność</option>
+          <option value="land_sort">Obszar</option>
+        </select>
+            <select id="rodzaj_sortowania">
+          <option value="rosn">rosnące</option>
+          <option value="mal">malejące</option>
+        </select>
+            <button onclick="sortTableData(document.getElementById('kolumny_sort').value,document.getElementById('rodzaj_sortowania').value)">Sortuj</button>
+            <!-- Koniec menu sortowania -->
+
+            <br/>
+
+            <!-- Menu filtrowania -->
+            <label>Filtrowanie</label>
+            <select onchange="filterTable(document.getElementById('filtruj').value)" id="filtruj">
+          <option value="">Wszystko</option>
+          <option value="Polska">Polska</option>
+          <option value="USA">USA</option>
+          <option value="Niemcy">Niemcy</option>
+          <option value="Anglia">Anglia</option>
+          <option value="Austria">Austria</option>
+          <option value="Szwajcaria">Szwajcaria</option>
+          <option value="Hiszpania">Hiszpania</option>
+<!--          <option value="Europa">Europa</option>
+          <option value="Ameryka">Ameryka</option>
+-->        </select>
+            <!-- Koniec menu filtrowania -->
+        </nav>
+
+        <!-- Tabela -->
+        <table id="table_full">
+            <thead id="head_table"></thead>
+            <tbody id="body_table"></tbody>
+            <tfoot id="foot_table"></tfoot>
+        </table>
+        <!-- Koniec tabeli -->
+    </div>
+    <div id="foot">Karol Mikołajczuk</div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

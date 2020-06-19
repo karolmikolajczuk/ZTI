@@ -1,0 +1,55 @@
+[{
+        "id": "1",
+        "id_user": "1",
+        "date": "1 Czerwca 2020r. godz. 10:01",
+        "content": "<p>Wiadomość numer 1.</p>"
+    },
+    {
+        "id": "2",
+        "id_user": "2",
+        "date": "1 Czerwca 2020r. godz. 10:02",
+        "content": "<p>Wiadomość numer 2.</p>"
+    },
+    {
+        "id": "3",
+        "id_user": "3",
+        "date": "1 Czerwca 2020r. godz. 10:03",
+        "content": "<p>Wiadomość numer 3.</p>"
+    },
+    {
+        "id": "4",
+        "id_user": "1",
+        "date": "1 Czerwca 2020r. godz. 10:04",
+        "content": "<p>Wiadomość numer 4.</p>"
+    },
+    {
+        "id": "5",
+        "id_user": "2",
+        "date": "1 Czerwca 2020r. godz. 10:05",
+        "content": "<p>Wiadomość numer 5.</p>"
+    },
+    {
+        "id": "6",
+        "id_user": "3",
+        "date": "1 Czerwca 2020r. godz. 10:06",
+        "content": "<p>Wiadomość numer 6.</p>"
+    },
+    {
+        "id": "7",
+        "id_user": "1",
+        "date": "1 Czerwca 2020r. godz. 10:07",
+        "content": "<p>Wiadomość numer 7.</p>"
+    },
+    {
+        "id": "8",
+        "id_user": "2",
+        "date": "1 Czerwca 2020r. godz. 10:08",
+        "content": "<p>Wiadomość numer 8.</p>"
+    },
+    {
+        "id": "9",
+        "id_user": "3",
+        "date": "1 Czerwca 2020r. godz. 10:09",
+        "content": "<p>Wiadomość numer 9.</p>"
+    }
+]
